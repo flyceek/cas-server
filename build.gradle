@@ -17,10 +17,12 @@ ext {
     Open the Git repository in the current directory.
     Get commit id of HEAD.
      */
-    git = org.ajoberstar.grgit.Grgit.open(dir: file('.').canonicalPath)
-    def gitHead = git.head()
-    currentRevision = gitHead.id
-    currentAbbreviatedRevision = gitHead.abbreviatedId
+    // git = org.ajoberstar.grgit.Grgit.open(dir: file('.').canonicalPath)
+    // def gitHead = git.head()
+    // currentRevision = gitHead.id
+    // currentAbbreviatedRevision = gitHead.abbreviatedId
+
+    currentRevision = '5.3.9'
 }
 
 def isArtifactSigningRequired = {
@@ -376,11 +378,11 @@ subprojects {
         compileOnly libraries.findbugsannotations
     }
 
-    if (project.name != 'cas-server-core-api-test-category') {
-        dependencies {
-            testImplementation project(path: ':api:cas-server-core-api-test-category', configuration: "tests")
-        }
-    }
+    // if (project.name != 'cas-server-core-api-test-category') {
+    //     dependencies {
+    //         testImplementation project(path: ':api:cas-server-core-api-test-category', configuration: "tests")
+    //     }
+    // }
 }
 
 wrapper {

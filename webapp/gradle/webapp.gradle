@@ -110,38 +110,39 @@ war {
 }
 
 dependencies {
-    implementation project(":core:cas-server-core")
-    implementation project(":core:cas-server-core-monitor")
-    implementation project(":core:cas-server-core-authentication")
-    implementation project(":core:cas-server-core-services")
-    implementation project(":core:cas-server-core-logout")
-    implementation project(":core:cas-server-core-audit")
-    implementation project(":core:cas-server-core-logging")
-    implementation project(":core:cas-server-core-tickets")
-    implementation project(":core:cas-server-core-web")
-    implementation project(":core:cas-server-core-webflow")
-    implementation project(":core:cas-server-core-validation")
-    implementation project(":core:cas-server-core-util")
-    implementation project(":core:cas-server-core-cookie")
-    implementation project(":core:cas-server-core-events")
-    implementation project(":core:cas-server-core-events-configuration")
-    implementation project(":core:cas-server-core-configuration")
-    implementation project(":core:cas-server-core-configuration-metadata-repository")
+    // implementation project(":core:cas-server-core")
+    // implementation project(":core:cas-server-core-monitor")
+    // implementation project(":core:cas-server-core-authentication")
+    // implementation project(":core:cas-server-core-services")
+    // implementation project(":core:cas-server-core-logout")
+    // implementation project(":core:cas-server-core-audit")
+    // implementation project(":core:cas-server-core-logging")
+    // implementation project(":core:cas-server-core-tickets")
+    // implementation project(":core:cas-server-core-web")
+    // implementation project(":core:cas-server-core-webflow")
+    // implementation project(":core:cas-server-core-validation")
+    // implementation project(":core:cas-server-core-util")
+    // implementation project(":core:cas-server-core-cookie")
+    // implementation project(":core:cas-server-core-events")
+    // implementation project(":core:cas-server-core-events-configuration")
+    // implementation project(":core:cas-server-core-configuration")
+    // implementation project(":core:cas-server-core-configuration-metadata-repository")
 
-    implementation project(":support:cas-server-support-throttle")
-    implementation project(":support:cas-server-support-metrics")
-    implementation project(":support:cas-server-support-person-directory")
-    implementation project(":support:cas-server-support-configuration")
-    implementation project(":support:cas-server-support-geolocation")
-    implementation project(":support:cas-server-support-actions")
-    implementation project(":support:cas-server-support-reports")
-    implementation project(":support:cas-server-support-themes")
-    implementation project(":support:cas-server-support-validation")
-    implementation project(":support:cas-server-support-pm-webflow")
+    // implementation project(":support:cas-server-support-throttle")
+    // implementation project(":support:cas-server-support-metrics")
+    // implementation project(":support:cas-server-support-person-directory")
+    // implementation project(":support:cas-server-support-configuration")
+    // implementation project(":support:cas-server-support-geolocation")
+    // implementation project(":support:cas-server-support-actions")
+    // implementation project(":support:cas-server-support-reports")
+    // implementation project(":support:cas-server-support-themes")
+    // implementation project(":support:cas-server-support-validation")
+    // implementation project(":support:cas-server-support-pm-webflow")
     
-    implementation project(":webapp:cas-server-webapp-config")
-    implementation project(":webapp:cas-server-webapp-init")
+    // implementation project(":webapp:cas-server-webapp-config")
+    // implementation project(":webapp:cas-server-webapp-init")
 
+    implementation libraries.casserverweb
     implementation libraries.pac4j
     implementation libraries.thymeleaf
     implementation libraries.groovy
@@ -149,6 +150,11 @@ dependencies {
     implementation libraries.metrics
     implementation libraries.bouncycastle
     implementation libraries.springcloudconfigclient
+    implementation libraries.spring
+    implementation libraries.jackson
+    implementation libraries.httpclient
+    implementation libraries.springcloud
+    implementation libraries.springboot
 
     runtime libraries.webjars
 }
