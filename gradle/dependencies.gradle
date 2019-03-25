@@ -2974,99 +2974,101 @@ ext.libraries = [
                     force = true
                 }
         ],
-        casserverweb        :[
-                dependencies.create("org.apereo.cas:cas-server-core:$casServerWebVersion"){
+        casserverwebapp        :[
+                dependencies.create("org.apereo.cas:cas-server-core:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-monitor:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-monitor:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-authentication:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-authentication:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-services:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-services:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-logout:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-logout:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-audit:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-audit:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-logging:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-logging:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-tickets:$casServerWebVersion") {
+                dependencies.create("org.apereo.cas:cas-server-core-tickets:$casServerVersion") {
                             exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-web:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-web:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-webflow:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-webflow:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-validation:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-validation:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-util:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-util:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-events:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-events:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-events-configuration:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-events-configuration:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-configuration:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-configuration:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-core-configuration-metadata-repository:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-core-configuration-metadata-repository:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-throttle:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-throttle:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-metrics:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-metrics:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-person-directory:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-person-directory:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-configuration:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-configuration:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-geolocation:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-geolocation:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-validation:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-validation:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-actions:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-actions:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
                 dependencies.create("org.apereo.cas:cas-server-support-cookie:5.2.9"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-reports:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-reports:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-themes:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-themes:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-json-service-registry:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-json-service-registry:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-validation:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-validation:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-pm:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-pm:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-pm-webflow:$casServerWebVersion"){
+                dependencies.create("org.apereo.cas:cas-server-support-pm-webflow:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
-                dependencies.create("org.apereo.cas:cas-server-support-jdbc:$casServerWebVersion"),
-                dependencies.create("org.apereo.cas:cas-server-support-rest:$casServerWebVersion"),
+                dependencies.create("org.apereo.cas:cas-server-webapp-config:$casServerVersion"),
+                dependencies.create("org.apereo.cas:cas-server-webapp-init:$casServerVersion"),
+                dependencies.create("org.apereo.cas:cas-server-support-jdbc:$casServerVersion"),
+                dependencies.create("org.apereo.cas:cas-server-support-rest:$casServerVersion"),
                 dependencies.create("com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre8"){
                     exclude(group: "com.microsoft.azure", module: "azure-keyvault")
                 },
