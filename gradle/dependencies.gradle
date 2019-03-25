@@ -3011,6 +3011,9 @@ ext.libraries = [
                 dependencies.create("org.apereo.cas:cas-server-core-util:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
+                dependencies.create("org.apereo.cas:cas-server-core-cookie:$casServerVersion"){
+                    exclude(group: "commons-lang", module: "commons-lang")
+                },
                 dependencies.create("org.apereo.cas:cas-server-core-events:$casServerVersion"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
@@ -3042,9 +3045,6 @@ ext.libraries = [
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
                 dependencies.create("org.apereo.cas:cas-server-support-actions:$casServerVersion"){
-                    exclude(group: "commons-lang", module: "commons-lang")
-                },
-                dependencies.create("org.apereo.cas:cas-server-support-cookie:5.2.9"){
                     exclude(group: "commons-lang", module: "commons-lang")
                 },
                 dependencies.create("org.apereo.cas:cas-server-support-reports:$casServerVersion"){
